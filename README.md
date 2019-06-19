@@ -16,3 +16,7 @@ reStructuredText:
    :target: https://<HEROKU_APP_NAME>.herokuapp.com
    :alt: Heroku
 ```
+Textile:
+```textile
+!https://pyheroku-badge.herokuapp.com/?app=<HEROKU_APP_NAME>!:https://<HEROKU_APP_NAME>.herokuapp.com
+```
