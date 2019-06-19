@@ -30,7 +30,7 @@ class HerokuBadge():
         r = requests.get(url)
         
         resp.content_type = "image/png"
-        resp.cache_control = ("no-cache", "no-store", "must-revalidate")
+        resp.cache_control = ("max-age=0", "no-cache", "no-store", "must-revalidate")
         if r.status_code == 200:
             resp.stream, resp.content_length = getBadge("deployed")
         else:
