@@ -71,17 +71,40 @@
                 </ul>
                 <div class="tab-content" style="min-height: 120px;">
                     <div class="tab-pane fade show active" id="markdown">
-                        <pre class="pl-3 pt-3"><code>![Heroku](https://pyheroku-badge.herokuapp.com/?app=<b>&lt;HEROKU_APP_NAME&gt;</b>)</code></pre>
+                        <pre class="p-3 pb-4 pt-4 mb-0"><code>![Heroku](https://pyheroku-badge.herokuapp.com/?app=<b>&lt;HEROKU_APP_NAME&gt;</b>&style=<b>&lt;STYLE&gt;</b>)</code></pre>
                     </div>
                     <div class="tab-pane fade" id="rst">
-                        <pre class="pl-3 pt-3"><code>.. image:: https://pyheroku-badge.herokuapp.com/?app=<b>&lt;HEROKU_APP_NAME&gt;</b>
+                        <pre class="p-3 pb-4 pt-4 mb-0"><code>.. image:: https://pyheroku-badge.herokuapp.com/?app=<b>&lt;HEROKU_APP_NAME&gt;</b>&style=<b>&lt;STYLE&gt;</b>
    :target: https://<b>&lt;HEROKU_APP_NAME&gt;</b>.herokuapp.com
    :alt: Heroku</code></pre>
                     </div>
                     <div class="tab-pane fade" id="textile">
-                            <pre class="pl-3 pt-3"><code>!https://pyheroku-badge.herokuapp.com/?app=<b>&lt;HEROKU_APP_NAME&gt;</b>!:https://<b>&lt;HEROKU_APP_NAME&gt;</b>.herokuapp.com</code></pre>
-                        </div>
+                        <pre class="p-3 pb-4 pt-4 mb-0"><code>!https://pyheroku-badge.herokuapp.com/?app=<b>&lt;HEROKU_APP_NAME&gt;</b>&style=<b>&lt;STYLE&gt;</b>!:https://<b>&lt;HEROKU_APP_NAME&gt;</b>.herokuapp.com</code></pre>
+                    </div>
                 </div>
+                <h3 class="text-center">Available Styles</h3>
+                <table class="table table-sm">
+                    <tbody>
+                        <tr>
+                            <th><code>flat</code> (Default)</th>
+                            <td><img src="https://github.com/DenisOH/pyheroku-badge/raw/master/img/deployed.svg?sanitize=true" alt="Heroku" style="max-width:100%;"></td>
+                            <td><img src="https://github.com/DenisOH/pyheroku-badge/raw/master/img/failed.svg?sanitize=true" alt="Heroku" style="max-width:100%;"></td>
+                            <td><img src="https://github.com/DenisOH/pyheroku-badge/raw/master/img/not-found.svg?sanitize=true" alt="Heroku" style="max-width:100%;"></td>
+                        </tr>
+                        <tr>
+                            <th><code>flat-square</code></th>
+                            <td><img src="https://github.com/DenisOH/pyheroku-badge/raw/master/img/deployed-flat-square.svg?sanitize=true" alt="Heroku" style="max-width:100%;"></td>
+                            <td><img src="https://github.com/DenisOH/pyheroku-badge/raw/master/img/failed-flat-square.svg?sanitize=true" alt="Heroku" style="max-width:100%;"></td>
+                            <td><img src="https://github.com/DenisOH/pyheroku-badge/raw/master/img/not-found-flat-square.svg?sanitize=true" alt="Heroku" style="max-width:100%;"></td>
+                        </tr>
+                        <tr>
+                            <th><code>plastic</code></th>
+                            <td><img src="https://github.com/DenisOH/pyheroku-badge/raw/master/img/deployed-plastic.svg?sanitize=true" alt="Heroku" style="max-width:100%;"></td>
+                            <td><img src="https://github.com/DenisOH/pyheroku-badge/raw/master/img/failed-plastic.svg?sanitize=true" alt="Heroku" style="max-width:100%;"></td>
+                            <td><img src="https://github.com/DenisOH/pyheroku-badge/raw/master/img/not-found-plastic.svg?sanitize=true" alt="Heroku" style="max-width:100%;"></td>
+                        </tr>
+                    </tbody>
+                </table>
             </div>   
         </div>
     </div>
