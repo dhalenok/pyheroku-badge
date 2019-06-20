@@ -26,3 +26,7 @@ Textile:
 | ![Heroku](https://github.com/DenisOH/pyheroku-badge/blob/master/img/deployed.svg) | ![Heroku](https://github.com/DenisOH/pyheroku-badge/blob/master/img/deployed-flat-square.svg) | ![Heroku](https://github.com/DenisOH/pyheroku-badge/blob/master/img/deployed-plastic.svg) |
 | ![Heroku](https://github.com/DenisOH/pyheroku-badge/blob/master/img/failed.svg) | ![Heroku](https://github.com/DenisOH/pyheroku-badge/blob/master/img/failed-flat-square.svg) | ![Heroku](https://github.com/DenisOH/pyheroku-badge/blob/master/img/failed-plastic.svg) |
 | ![Heroku](https://github.com/DenisOH/pyheroku-badge/blob/master/img/not-found.svg) | ![Heroku](https://github.com/DenisOH/pyheroku-badge/blob/master/img/not-found-flat-square.svg) | ![Heroku](https://github.com/DenisOH/pyheroku-badge/blob/master/img/not-found-plastic.svg) |
+
+## License
+Code and documentation are available according to the MIT License (see [LICENSE](https://github.com/DenisOH/pyheroku-badge/blob/master/LICENSE)).
+
