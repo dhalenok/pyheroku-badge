@@ -4,6 +4,7 @@ The simplest way to include a Heroku badge in your README file.
 > The idea was blatantly stolen from the [heroku-badge](https://github.com/pussinboots/heroku-badge) project.
 
 ![Heroku](https://pyheroku-badge.herokuapp.com/?app=pyheroku-badge)
+[![License](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
 
 ## Usage
 Markdown:
@@ -28,5 +29,5 @@ Textile:
 | ![Heroku](https://github.com/DenisOH/pyheroku-badge/blob/master/img/not-found.svg) | ![Heroku](https://github.com/DenisOH/pyheroku-badge/blob/master/img/not-found-flat-square.svg) | ![Heroku](https://github.com/DenisOH/pyheroku-badge/blob/master/img/not-found-plastic.svg) |
 
 ## License
-Code and documentation are available according to the MIT License (see [LICENSE](https://github.com/DenisOH/pyheroku-badge/blob/master/LICENSE)).
+Code and documentation are available according to the MIT License (see [LICENSE](LICENSE)).
 
