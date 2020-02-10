@@ -2,6 +2,7 @@ import os
 import io
 import falcon
 import requests
+from datetime import datetime, timezone, timedelta
 
 ALLOWED_STYLES = ("flat-square", "plastic")
 
@@ -36,10 +37,11 @@ class HerokuBadge:
         url = f"https://{app}.herokuapp.com/"
         r = requests.get(url)
 
-        resp.cache_control = ("max-age=0", "no-cache", "no-store", "must-revalidate")
-        resp.append_header("pragma", "no-cache")
-        resp.append_header("expires", 0)
-        resp.content_type = "image/svg+xml"
+        resp.cache_control = ("max-age=120",)
+        resp.content_type = "image/svg+xml;charset=utf-8"
+        resp.date = datetime.now(timezone.utc)
+        resp.expires = datetime.now(timezone.utc) + timedelta(minutes=2)
+        resp.x_dns_prefetch_control = False
 
         if r.status_code == 200:
             resp.stream, resp.content_length = get_badge(name="deployed", style=style)
