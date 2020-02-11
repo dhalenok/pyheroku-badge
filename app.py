@@ -34,21 +34,24 @@ class HerokuBadge:
             return
         style = req.params.get("style")
 
-        url = f"https://{app}.herokuapp.com/"
-        r = requests.get(url)
-
         resp.cache_control = ("max-age=120",)
         resp.content_type = "image/svg+xml;charset=utf-8"
         resp.date = datetime.now(timezone.utc)
         resp.expires = datetime.now(timezone.utc) + timedelta(minutes=2)
         resp.x_dns_prefetch_control = False
 
-        if r.status_code == 200:
-            resp.stream, resp.content_length = get_badge(name="deployed", style=style)
-        elif r.status_code == 404:
-            resp.stream, resp.content_length = get_badge(name="not-found", style=style)
+        url = f"https://{app}.herokuapp.com/"
+        try:
+            r = requests.get(url, timeout=3.6)
+        except requests.exceptions.Timeout:
+            resp.stream, resp.content_length = get_badge(name="timeout", style=style)
         else:
-            resp.stream, resp.content_length = get_badge(name="failed", style=style)
+            if r.status_code == 200:
+                resp.stream, resp.content_length = get_badge(name="deployed", style=style)
+            elif r.status_code == 404:
+                resp.stream, resp.content_length = get_badge(name="not_found", style=style)
+            else:
+                resp.stream, resp.content_length = get_badge(name="failed", style=style)
 
 
 application = falcon.API()
