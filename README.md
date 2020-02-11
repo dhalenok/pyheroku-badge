@@ -27,6 +27,17 @@ Textile:
 | ![Heroku](https://github.com/DenisOH/pyheroku-badge/blob/master/img/deployed.svg) | ![Heroku](https://github.com/DenisOH/pyheroku-badge/blob/master/img/deployed-flat-square.svg) | ![Heroku](https://github.com/DenisOH/pyheroku-badge/blob/master/img/deployed-plastic.svg) |
 | ![Heroku](https://github.com/DenisOH/pyheroku-badge/blob/master/img/failed.svg) | ![Heroku](https://github.com/DenisOH/pyheroku-badge/blob/master/img/failed-flat-square.svg) | ![Heroku](https://github.com/DenisOH/pyheroku-badge/blob/master/img/failed-plastic.svg) |
 | ![Heroku](https://github.com/DenisOH/pyheroku-badge/blob/master/img/not-found.svg) | ![Heroku](https://github.com/DenisOH/pyheroku-badge/blob/master/img/not-found-flat-square.svg) | ![Heroku](https://github.com/DenisOH/pyheroku-badge/blob/master/img/not-found-plastic.svg) |
+| ![Heroku](https://github.com/DenisOH/pyheroku-badge/blob/master/img/timeout.svg) | ![Heroku](https://github.com/DenisOH/pyheroku-badge/blob/master/img/timeout-flat-square.svg) | ![Heroku](https://github.com/DenisOH/pyheroku-badge/blob/master/img/timeout-plastic.svg) |
+
+## FAQ
+
+- Heroku badge shows `timeout`
+
+Most likely your app is using free dynos and sleeps after 30 minutes of inactivity. If the app is sleeping, it takes roughly 15 seconds for get a response from the application. However, GitHub has a hard timeout for badges which is roughly 4 seconds.  
+
+While [pyheroku-badge](https://github.com/DenisOH/pyheroku-badge/) can work with any Heroku application, it has to return the badge in less than 4 seconds for GitHub to render it. If your app doesn't return a response for HTTP GET request fast enough, you will see the `timeout` badge.  
+
+The only solution would be to upgrade your app to the hobby plan.
 
 ## License
 ```
