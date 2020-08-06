@@ -29,9 +29,15 @@ class HerokuBadge:
                 return
 
         app = req.params.get("app")
+        path = req.params.get("path")
+
+        if path is None:
+            path = "/"
+
         if not app:
             resp.status = falcon.HTTP_501
             return
+
         style = req.params.get("style")
 
         resp.cache_control = ("max-age=120",)
@@ -40,9 +46,10 @@ class HerokuBadge:
         resp.expires = datetime.now(timezone.utc) + timedelta(minutes=2)
         resp.x_dns_prefetch_control = False
 
-        url = f"https://{app}.herokuapp.com/"
+        url = f"https://{app}.herokuapp.com{path}"
         try:
             r = requests.get(url, timeout=3.6)
+            
         except requests.exceptions.Timeout:
             resp.stream, resp.content_length = get_badge(name="timeout", style=style)
         else:
