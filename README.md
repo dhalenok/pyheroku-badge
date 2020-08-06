@@ -42,7 +42,7 @@ Textile:
 
 - Heroku badge shows `timeout`
 
-Most likely your app is using free dynos and sleeps after 30 minutes of inactivity. If the app is sleeping, it takes roughly 15 seconds for get a response from the application. However, GitHub has a hard timeout for badges which is roughly 4 seconds.
+Most likely your app is using free dynos and goes to sleep after 30 minutes of inactivity. If the app is sleeping, it takes roughly 15 seconds to get a response from the application. However, GitHub has a hard timeout for badges which is roughly 4 seconds.  
 
 While [pyheroku-badge](https://github.com/DenisOH/pyheroku-badge/) can work with any Heroku application, it has to return the badge in less than 4 seconds for GitHub to render it. If your app doesn't return a response for HTTP GET request fast enough, you will see the `timeout` badge.
 
