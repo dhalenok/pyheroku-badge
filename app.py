@@ -56,7 +56,7 @@ class HerokuBadge:
             if r.status_code == 200:
                 resp.stream, resp.content_length = get_badge(name="deployed", style=style)
             elif r.status_code == 404:
-                resp.stream, resp.content_length = get_badge(name="not_found", style=style)
+                resp.stream, resp.content_length = get_badge(name="not-found", style=style)
             else:
                 resp.stream, resp.content_length = get_badge(name="failed", style=style)
 
