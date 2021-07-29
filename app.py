@@ -40,7 +40,7 @@ class HerokuBadge:
 
         style = req.params.get("style")
 
-        resp.cache_control = ("max-age=120",)
+        resp.cache_control = ("public, max-age=0",)
         resp.content_type = "image/svg+xml;charset=utf-8"
         resp.date = datetime.now(timezone.utc)
         resp.expires = datetime.now(timezone.utc) + timedelta(minutes=2)
