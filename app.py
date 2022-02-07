@@ -1,13 +1,15 @@
-import os
 import io
+import os
+from datetime import datetime, timedelta, timezone
+from typing import Optional
+
 import falcon
 import requests
-from datetime import datetime, timezone, timedelta
 
 ALLOWED_STYLES = ("flat-square", "plastic")
 
 
-def get_badge(name: str, style: str = None):
+def get_badge(name: str, style: Optional[str] = None):
     if style and style in ALLOWED_STYLES:
         image_path = os.path.join(os.getcwd(), f"img/{name}-{style}.svg")
     else:
@@ -49,14 +51,17 @@ class HerokuBadge:
         url = f"https://{app}.herokuapp.com{path}"
         try:
             r = requests.get(url, timeout=3.6)
-            
         except requests.exceptions.Timeout:
             resp.stream, resp.content_length = get_badge(name="timeout", style=style)
         else:
             if r.status_code == 200:
-                resp.stream, resp.content_length = get_badge(name="deployed", style=style)
+                resp.stream, resp.content_length = get_badge(
+                    name="deployed", style=style
+                )
             elif r.status_code == 404:
-                resp.stream, resp.content_length = get_badge(name="not-found", style=style)
+                resp.stream, resp.content_length = get_badge(
+                    name="not-found", style=style
+                )
             else:
                 resp.stream, resp.content_length = get_badge(name="failed", style=style)
 
