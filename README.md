@@ -1,3 +1,5 @@
+[![SWUbanner](https://raw.githubusercontent.com/vshymanskyy/StandWithUkraine/main/banner-direct-single.svg)](https://github.com/vshymanskyy/StandWithUkraine/blob/main/docs/README.md)
+
 # pyheroku-badge
 
 The simplest way to include a Heroku badge in your README file.
