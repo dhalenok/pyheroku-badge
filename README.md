@@ -34,10 +34,10 @@ Textile:
 
 | `flat` (Default)                                                                   | `flat-square`                                                                                  | `plastic`                                                                                  |
 | ---------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------ |
-| ![Heroku](https://github.com/DenisOH/pyheroku-badge/blob/master/public/img/deployed.svg)  | ![Heroku](https://github.com/DenisOH/pyheroku-badge/blob/master/public/img/deployed-flat-square.svg)  | ![Heroku](https://github.com/DenisOH/pyheroku-badge/blob/master/public/img/deployed-plastic.svg)  |
-| ![Heroku](https://github.com/DenisOH/pyheroku-badge/blob/master/public/img/failed.svg)    | ![Heroku](https://github.com/DenisOH/pyheroku-badge/blob/master/public/img/failed-flat-square.svg)    | ![Heroku](https://github.com/DenisOH/pyheroku-badge/blob/master/public/img/failed-plastic.svg)    |
-| ![Heroku](https://github.com/DenisOH/pyheroku-badge/blob/master/public/img/not-found.svg) | ![Heroku](https://github.com/DenisOH/pyheroku-badge/blob/master/public/img/not-found-flat-square.svg) | ![Heroku](https://github.com/DenisOH/pyheroku-badge/blob/master/public/img/not-found-plastic.svg) |
-| ![Heroku](https://github.com/DenisOH/pyheroku-badge/blob/master/public/img/timeout.svg)   | ![Heroku](https://github.com/DenisOH/pyheroku-badge/blob/master/public/img/timeout-flat-square.svg)   | ![Heroku](https://github.com/DenisOH/pyheroku-badge/blob/master/public/img/timeout-plastic.svg)   |
+| ![Heroku](https://github.com/DenisOH/pyheroku-badge/blob/main/public/img/deployed.svg)  | ![Heroku](https://github.com/DenisOH/pyheroku-badge/blob/main/public/img/deployed-flat-square.svg)  | ![Heroku](https://github.com/DenisOH/pyheroku-badge/blob/main/public/img/deployed-plastic.svg)  |
+| ![Heroku](https://github.com/DenisOH/pyheroku-badge/blob/main/public/img/failed.svg)    | ![Heroku](https://github.com/DenisOH/pyheroku-badge/blob/main/public/img/failed-flat-square.svg)    | ![Heroku](https://github.com/DenisOH/pyheroku-badge/blob/main/public/img/failed-plastic.svg)    |
+| ![Heroku](https://github.com/DenisOH/pyheroku-badge/blob/main/public/img/not-found.svg) | ![Heroku](https://github.com/DenisOH/pyheroku-badge/blob/main/public/img/not-found-flat-square.svg) | ![Heroku](https://github.com/DenisOH/pyheroku-badge/blob/main/public/img/not-found-plastic.svg) |
+| ![Heroku](https://github.com/DenisOH/pyheroku-badge/blob/main/public/img/timeout.svg)   | ![Heroku](https://github.com/DenisOH/pyheroku-badge/blob/main/public/img/timeout-flat-square.svg)   | ![Heroku](https://github.com/DenisOH/pyheroku-badge/blob/main/public/img/timeout-plastic.svg)   |
 
 ## FAQ
 
