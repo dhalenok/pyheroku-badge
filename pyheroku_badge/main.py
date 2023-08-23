@@ -21,7 +21,7 @@ async def root(
     if app is None:
         raise HTTPException(status_code=501)
 
-    clean_app = re.sub("[^A-Za-z0-9]+", "", app)
+    clean_app = re.sub("[^A-Za-z0-9-]+", "", app)
     if not clean_app:
         raise HTTPException(status_code=400)
 
