@@ -6,7 +6,6 @@ The simplest way to include a Heroku badge in your README file.
 
 > The idea was blatantly stolen from the [heroku-badge](https://github.com/pussinboots/heroku-badge) project.
 
-![Heroku](https://pyheroku-badge.herokuapp.com/?app=pyheroku-badge)
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
 
 ## Usage
@@ -14,13 +13,13 @@ The simplest way to include a Heroku badge in your README file.
 Markdown:
 
 ```markdown
-![Heroku](https://pyheroku-badge.herokuapp.com/?app=<HEROKU_APP_NAME>&path=<ROUTE>&style=<STYLE>)
+![Heroku](https://pyheroku-badge.fly.dev/?app=<HEROKU_APP_NAME>&path=<ROUTE>&style=<STYLE>)
 ```
 
 reStructuredText:
 
 ```rst
-.. image:: https://pyheroku-badge.herokuapp.com/?app=<HEROKU_APP_NAME>&path=<ROUTE>&style=<STYLE>
+.. image:: https://pyheroku-badge.fly.dev/?app=<HEROKU_APP_NAME>&path=<ROUTE>&style=<STYLE>
    :target: https://<HEROKU_APP_NAME>.herokuapp.com
    :alt: Heroku
 ```
@@ -28,17 +27,17 @@ reStructuredText:
 Textile:
 
 ```textile
-!https://pyheroku-badge.herokuapp.com/?app=<HEROKU_APP_NAME>&path=<ROUTE>&style=<STYLE>!:https://<HEROKU_APP_NAME>.herokuapp.com
+!https://pyheroku-badge.fly.dev/?app=<HEROKU_APP_NAME>&path=<ROUTE>&style=<STYLE>!:https://<HEROKU_APP_NAME>.herokuapp.com
 ```
 
 ## Available Styles
 
 | `flat` (Default)                                                                   | `flat-square`                                                                                  | `plastic`                                                                                  |
 | ---------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------ |
-| ![Heroku](https://github.com/DenisOH/pyheroku-badge/blob/master/img/deployed.svg)  | ![Heroku](https://github.com/DenisOH/pyheroku-badge/blob/master/img/deployed-flat-square.svg)  | ![Heroku](https://github.com/DenisOH/pyheroku-badge/blob/master/img/deployed-plastic.svg)  |
-| ![Heroku](https://github.com/DenisOH/pyheroku-badge/blob/master/img/failed.svg)    | ![Heroku](https://github.com/DenisOH/pyheroku-badge/blob/master/img/failed-flat-square.svg)    | ![Heroku](https://github.com/DenisOH/pyheroku-badge/blob/master/img/failed-plastic.svg)    |
-| ![Heroku](https://github.com/DenisOH/pyheroku-badge/blob/master/img/not-found.svg) | ![Heroku](https://github.com/DenisOH/pyheroku-badge/blob/master/img/not-found-flat-square.svg) | ![Heroku](https://github.com/DenisOH/pyheroku-badge/blob/master/img/not-found-plastic.svg) |
-| ![Heroku](https://github.com/DenisOH/pyheroku-badge/blob/master/img/timeout.svg)   | ![Heroku](https://github.com/DenisOH/pyheroku-badge/blob/master/img/timeout-flat-square.svg)   | ![Heroku](https://github.com/DenisOH/pyheroku-badge/blob/master/img/timeout-plastic.svg)   |
+| ![Heroku](https://github.com/DenisOH/pyheroku-badge/blob/master/public/img/deployed.svg)  | ![Heroku](https://github.com/DenisOH/pyheroku-badge/blob/master/public/img/deployed-flat-square.svg)  | ![Heroku](https://github.com/DenisOH/pyheroku-badge/blob/master/public/img/deployed-plastic.svg)  |
+| ![Heroku](https://github.com/DenisOH/pyheroku-badge/blob/master/public/img/failed.svg)    | ![Heroku](https://github.com/DenisOH/pyheroku-badge/blob/master/public/img/failed-flat-square.svg)    | ![Heroku](https://github.com/DenisOH/pyheroku-badge/blob/master/public/img/failed-plastic.svg)    |
+| ![Heroku](https://github.com/DenisOH/pyheroku-badge/blob/master/public/img/not-found.svg) | ![Heroku](https://github.com/DenisOH/pyheroku-badge/blob/master/public/img/not-found-flat-square.svg) | ![Heroku](https://github.com/DenisOH/pyheroku-badge/blob/master/public/img/not-found-plastic.svg) |
+| ![Heroku](https://github.com/DenisOH/pyheroku-badge/blob/master/public/img/timeout.svg)   | ![Heroku](https://github.com/DenisOH/pyheroku-badge/blob/master/public/img/timeout-flat-square.svg)   | ![Heroku](https://github.com/DenisOH/pyheroku-badge/blob/master/public/img/timeout-plastic.svg)   |
 
 ## FAQ
 
