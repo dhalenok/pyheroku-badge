@@ -8,7 +8,7 @@ readme = "README.md"
 packages = [{include = "pyheroku_badge"}]
 
 [tool.poetry.dependencies]
-fastapi = "^0.101.1"
+fastapi = "^0.109.1"
 python = "^3.11"
 uvicorn = {extras = ["standard"], version = "^0.23.2"}
 httpx = "^0.24.1"
